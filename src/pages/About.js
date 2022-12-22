@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Bio } from "../components/appStyles"
 
 function About( {URL} ) {
     // create state to hold about data
@@ -21,11 +22,11 @@ function About( {URL} ) {
 
     // define a function that will return the JSX needed once we get the data
     const loaded = () => (
-        <div>
+        <Bio>
             <h2>{ about.name }</h2>
             <h3>{ about.email }</h3>
             <p>{ about.bio }</p>
-        </div>
+        </Bio>
     );
 
     // if data arrives return the result of loaded, if not, an h1 that says loading...

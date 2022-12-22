@@ -1,7 +1,7 @@
 
 function Footer(props) {
     return (
-        <h1>Footer</h1>
+        <h3>customer success engineer</h3>
     )
 }
 
